@@ -1,0 +1,242 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-05-16T18:24:42.425Z",
+    "end": "2025-05-16T18:27:23.251Z",
+    "duration": 160826,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e6634791-317f-40fb-9335-3969f7494a45",
+      "title": "",
+      "fullFile": "src/integration/e2e-cypress/tests/calling/ds/users/rec-fullpage_spec.ts",
+      "file": "src/integration/e2e-cypress/tests/calling/ds/users/rec-fullpage_spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2b987524-513d-47df-9dd3-4b8090f937cb",
+          "title": "receptionist-client",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "1188e680-ea6b-4139-a87b-9493c6313025",
+              "title": "Receptionist Client flow",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Should be on overview page of customer portal",
+                  "fullTitle": "receptionist-client Receptionist Client flow Should be on overview page of customer portal",
+                  "timedOut": null,
+                  "duration": 13960,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_12__[\"default\"].expectDriverCurrentUrl('overview');\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_14__[\"TestUtils\"].expectIsPresent(_pages_navigation_page__WEBPACK_IMPORTED_MODULE_4__[\"default\"].leftNav);",
+                  "err": {},
+                  "uuid": "7641c535-9476-4f06-9d90-50143816d1c6",
+                  "parentUUID": "1188e680-ea6b-4139-a87b-9493c6313025",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Should navigate to Features page",
+                  "fullTitle": "receptionist-client Receptionist Client flow Should navigate to Features page",
+                  "timedOut": null,
+                  "duration": 10038,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "navigateToFeaturesPage();",
+                  "err": {},
+                  "uuid": "ca802ce9-3528-4b99-ad1d-d5a7910df473",
+                  "parentUUID": "1188e680-ea6b-4139-a87b-9493c6313025",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "7641c535-9476-4f06-9d90-50143816d1c6",
+                "ca802ce9-3528-4b99-ad1d-d5a7910df473"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 23998,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "7fe06ad1-d4d2-452a-b35b-2b4764c57449",
+              "title": "Receptionist Client validation",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Validate receptionist tab screen flow",
+                  "fullTitle": "receptionist-client Receptionist Client validation Validate receptionist tab screen flow",
+                  "timedOut": null,
+                  "duration": 18875,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_locations_features_utils__WEBPACK_IMPORTED_MODULE_10__[\"FeaturesUtils\"].navigateToFeaturesWithLocationPopUp(RECEPTIONIST_CLIENT, LOCATION_NAME);",
+                  "err": {},
+                  "uuid": "fee38876-245d-49bf-9deb-d0fe68379d17",
+                  "parentUUID": "7fe06ad1-d4d2-452a-b35b-2b4764c57449",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "fee38876-245d-49bf-9deb-d0fe68379d17"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 18875,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "7acc885d-232e-4d2b-80b7-09ba3792a56a",
+              "title": "Toggle current state of Receptionist Client and restore it",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should search for feature",
+                  "fullTitle": "receptionist-client Toggle current state of Receptionist Client and restore it should search for feature",
+                  "timedOut": null,
+                  "duration": 20810,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const recSearch = '[data-test-id=\"attendant-console-search-input\"]';\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_14__[\"TestUtils\"].clickWhenVisible(recSearch);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_14__[\"TestUtils\"].clear(recSearch);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_14__[\"TestUtils\"].sendKeys(recSearch, USER_NAME + '{enter}');\ncy.wait(_utils_common_types__WEBPACK_IMPORTED_MODULE_9__[\"SHORT_TIMEOUT\"]);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_14__[\"TestUtils\"].waitForSpinnerToFinish();",
+                  "err": {},
+                  "uuid": "6513b87d-47b5-4cd4-8aea-fea538c1b604",
+                  "parentUUID": "7acc885d-232e-4d2b-80b7-09ba3792a56a",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should toggle the state and restore it",
+                  "fullTitle": "receptionist-client Toggle current state of Receptionist Client and restore it should toggle the state and restore it",
+                  "timedOut": null,
+                  "duration": 94545,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(DOM_BODY).then((body) => {\n    /* If the user does not have a receptionistClient configured,\n      the empty search result page is displayed, instead of\n      the receptionistClient list with a single row. */\n    table = body.find(_pages_locations_advanced_call_settings_page__WEBPACK_IMPORTED_MODULE_2__[\"locationAdvancedCallSettingsPage\"].featureListing.noResultsTable);\n    const userDoesNotHaveReceptionistClientFeature = table.length > 0;\n    if (userDoesNotHaveReceptionistClientFeature) {\n        _utils_test_utils__WEBPACK_IMPORTED_MODULE_14__[\"TestUtils\"].print('Receptionist client initial state is OFF');\n        turnONReceptionist();\n    }\n    else {\n        _utils_test_utils__WEBPACK_IMPORTED_MODULE_14__[\"TestUtils\"].print('Receptionist client initial state is ON');\n        turnOFFReceptionist();\n    }\n});",
+                  "err": {},
+                  "uuid": "386d41b2-f851-4313-bb63-fdfb8115adc4",
+                  "parentUUID": "7acc885d-232e-4d2b-80b7-09ba3792a56a",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "6513b87d-47b5-4cd4-8aea-fea538c1b604",
+                "386d41b2-f851-4313-bb63-fdfb8115adc4"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 115355,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]_[status]_report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mochawesome",
+        "reportFilename": "[name]_[status]_report",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

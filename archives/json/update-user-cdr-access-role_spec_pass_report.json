@@ -1,0 +1,279 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 8,
+    "passes": 8,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-05-16T18:36:07.289Z",
+    "end": "2025-05-16T18:39:29.702Z",
+    "duration": 202413,
+    "testsRegistered": 8,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9223a9e0-2ea6-4343-ab91-bac1fb6009d3",
+      "title": "",
+      "fullFile": "src/integration/e2e-cypress/tests/calling/ds/users/update-user-cdr-access-role_spec.ts",
+      "file": "src/integration/e2e-cypress/tests/calling/ds/users/update-user-cdr-access-role_spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7da009c2-8857-44db-8ce1-ff4dfa5bef1f",
+          "title": "update-user-cdr-access-role",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "0c2e1d83-d952-498e-a607-97959dd319df",
+              "title": "Add User If It Does Not Exist",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should navigate to users page",
+                  "fullTitle": "update-user-cdr-access-role Add User If It Does Not Exist should navigate to users page",
+                  "timedOut": null,
+                  "duration": 18188,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_9__[\"default\"].clickUsersTab();\n_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_9__[\"default\"].expectDriverCurrentUrl('users');",
+                  "err": {},
+                  "uuid": "403d1938-f624-46c2-9717-d72eebd0515a",
+                  "parentUUID": "0c2e1d83-d952-498e-a607-97959dd319df",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "403d1938-f624-46c2-9717-d72eebd0515a"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 18188,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "a642dc4d-4162-4d1b-ad0d-fd07b3e2084e",
+              "title": "User validation flow",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Search for User and navigate to User details panel - userCdr1",
+                  "fullTitle": "update-user-cdr-access-role User validation flow Search for User and navigate to User details panel - userCdr1",
+                  "timedOut": null,
+                  "duration": 38599,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].expectIsDisplayed(_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].SEARCH_FIELD_USER_LIST);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].click(_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].SEARCH_FIELD_USER_LIST);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].searchAndClickUserList(USER_EMAIL);",
+                  "err": {},
+                  "uuid": "ffd541b7-dbda-475e-b579-10ca732c1838",
+                  "parentUUID": "a642dc4d-4162-4d1b-ad0d-fd07b3e2084e",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Should navigate to calling details screen - cdr1",
+                  "fullTitle": "update-user-cdr-access-role User validation flow Should navigate to calling details screen - cdr1",
+                  "timedOut": null,
+                  "duration": 6823,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_users_utils__WEBPACK_IMPORTED_MODULE_12__[\"UsersUtils\"].expectIsDisplayedCallingFullView();\ncy.wait(_utils_common_types__WEBPACK_IMPORTED_MODULE_7__[\"VERY_SHORT_TIME\"]); // gives page time to load\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].waitForText(_pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].mchPageSectionHeaderHeading, _pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].userDetailPanel.userDetailText);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].scrollIntoViewByElement(_pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].administratorRoles.adminRolePage);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].waitUntilElemIsPresent(_pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].administratorRoles.adminRolePage);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].click(_pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].administratorRoles.adminRolePage);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].waitForText(_pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].mchPageSectionHeaderHeading, _pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].administratorRoles.adminRoleHeaderText);",
+                  "err": {},
+                  "uuid": "d3a0fe30-427d-4e4a-b87b-50c0b884fc06",
+                  "parentUUID": "a642dc4d-4162-4d1b-ad0d-fd07b3e2084e",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Should click on admin role and save",
+                  "fullTitle": "update-user-cdr-access-role User validation flow Should click on admin role and save",
+                  "timedOut": null,
+                  "duration": 15966,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(_pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].administratorRoles.adminRoleCheckbox).should('not.be.checked');\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].waitUntilElemIsPresent(_pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].administratorRoles.cdrAccessCheckbox);\ncy.wait(_utils_common_types__WEBPACK_IMPORTED_MODULE_7__[\"VERY_SHORT_TIME\"]);\ncy.get(_pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].administratorRoles.cdrAccessCheckbox).click();\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].waitUntilElemIsPresent(_pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].administratorRoles.saveButton);\ncy.get(_pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].administratorRoles.saveButton).click();\n_utils_notifications_utils__WEBPACK_IMPORTED_MODULE_10__[\"NotificationUtils\"].assertToastSuccess(toastSuccessfullyUpdated);\n_utils_users_utils__WEBPACK_IMPORTED_MODULE_12__[\"UsersUtils\"].clickBackToUserOrCloseSidePanel();",
+                  "err": {},
+                  "uuid": "2d0148a1-0e63-41ff-93a9-63507b1c298f",
+                  "parentUUID": "a642dc4d-4162-4d1b-ad0d-fd07b3e2084e",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Search for User and navigate to User details panel - userCdr2",
+                  "fullTitle": "update-user-cdr-access-role User validation flow Search for User and navigate to User details panel - userCdr2",
+                  "timedOut": null,
+                  "duration": 39391,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].expectIsDisplayed(_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].SEARCH_FIELD_USER_LIST);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].click(_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].SEARCH_FIELD_USER_LIST);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].searchAndClickUserList(USER_EMAIL);",
+                  "err": {},
+                  "uuid": "66c58787-980e-4eb9-a0d7-65e6d210be07",
+                  "parentUUID": "a642dc4d-4162-4d1b-ad0d-fd07b3e2084e",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Should navigate to calling details screen - cdr2",
+                  "fullTitle": "update-user-cdr-access-role User validation flow Should navigate to calling details screen - cdr2",
+                  "timedOut": null,
+                  "duration": 5554,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_users_utils__WEBPACK_IMPORTED_MODULE_12__[\"UsersUtils\"].expectIsDisplayedCallingFullView();\ncy.wait(_utils_common_types__WEBPACK_IMPORTED_MODULE_7__[\"VERY_SHORT_TIME\"]); // gives page time to load\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].waitForText(_pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].mchPageSectionHeaderHeading, _pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].userDetailPanel.userDetailText);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].scrollIntoViewByElement(_pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].administratorRoles.adminRolePage);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].waitUntilElemIsPresent(_pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].administratorRoles.adminRolePage);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].click(_pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].administratorRoles.adminRolePage);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].waitForText(_pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].mchPageSectionHeaderHeading, _pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].administratorRoles.adminRoleHeaderText);",
+                  "err": {},
+                  "uuid": "5c4ed684-46c4-4945-8ae1-3fa0fd2f90ba",
+                  "parentUUID": "a642dc4d-4162-4d1b-ad0d-fd07b3e2084e",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Should remove on cdr role and save",
+                  "fullTitle": "update-user-cdr-access-role User validation flow Should remove on cdr role and save",
+                  "timedOut": null,
+                  "duration": 19076,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(_pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].administratorRoles.adminRoleCheckbox).should('not.be.checked');\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].waitUntilElemIsPresent(_pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].administratorRoles.cdrAccessCheckbox);\ncy.get(_pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].administratorRoles.cdrAccessCheckbox).click();\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].waitUntilElemIsPresent(_pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].administratorRoles.saveButton);\ncy.get(_pages_users_call_user_page__WEBPACK_IMPORTED_MODULE_0__[\"CallUserPage\"].administratorRoles.saveButton).click();\n_utils_notifications_utils__WEBPACK_IMPORTED_MODULE_10__[\"NotificationUtils\"].assertToastSuccess(toastSuccessfullyUpdated);\n_utils_users_utils__WEBPACK_IMPORTED_MODULE_12__[\"UsersUtils\"].clickBackToUserOrCloseSidePanel();",
+                  "err": {},
+                  "uuid": "3e49cca7-4433-4967-b24d-90b174681c7e",
+                  "parentUUID": "a642dc4d-4162-4d1b-ad0d-fd07b3e2084e",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Should delete user",
+                  "fullTitle": "update-user-cdr-access-role User validation flow Should delete user",
+                  "timedOut": null,
+                  "duration": 56230,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].deleteIfUserExists(USER_EMAIL);",
+                  "err": {},
+                  "uuid": "adc77cf5-ede6-4123-9bef-4101fb060c91",
+                  "parentUUID": "a642dc4d-4162-4d1b-ad0d-fd07b3e2084e",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "ffd541b7-dbda-475e-b579-10ca732c1838",
+                "d3a0fe30-427d-4e4a-b87b-50c0b884fc06",
+                "2d0148a1-0e63-41ff-93a9-63507b1c298f",
+                "66c58787-980e-4eb9-a0d7-65e6d210be07",
+                "5c4ed684-46c4-4945-8ae1-3fa0fd2f90ba",
+                "3e49cca7-4433-4967-b24d-90b174681c7e",
+                "adc77cf5-ede6-4123-9bef-4101fb060c91"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 181639,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]_[status]_report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mochawesome",
+        "reportFilename": "[name]_[status]_report",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

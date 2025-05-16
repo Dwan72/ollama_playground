@@ -1,0 +1,221 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-05-16T18:04:40.025Z",
+    "end": "2025-05-16T18:06:45.807Z",
+    "duration": 125782,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "57fd66e7-c32e-4eb4-8bb5-0d81b6df93fd",
+      "title": "",
+      "fullFile": "src/integration/e2e-cypress/tests/calling/ds/users/anonymous-call-rejection_spec.ts",
+      "file": "src/integration/e2e-cypress/tests/calling/ds/users/anonymous-call-rejection_spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dfe72f9e-d8c7-4994-beab-5bd112eaf24f",
+          "title": "anonymous-call-rejection",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "d2beb7bf-338a-4262-bb40-f8da1095eada",
+              "title": "Anonymous Call Rejection",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Should be on overview page of customer portal",
+                  "fullTitle": "anonymous-call-rejection Anonymous Call Rejection Should be on overview page of customer portal",
+                  "timedOut": null,
+                  "duration": 26903,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_9__[\"default\"].expectDriverCurrentUrl('overview');\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].expectIsPresent(_pages_navigation_page__WEBPACK_IMPORTED_MODULE_1__[\"default\"].leftNav);",
+                  "err": {},
+                  "uuid": "e05b9a5e-1f6d-4742-933f-b573eda4d9d5",
+                  "parentUUID": "d2beb7bf-338a-4262-bb40-f8da1095eada",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Should navigate to Users page",
+                  "fullTitle": "anonymous-call-rejection Anonymous Call Rejection Should navigate to Users page",
+                  "timedOut": null,
+                  "duration": 1358,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_9__[\"default\"].clickUsersTab();\n_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_9__[\"default\"].expectDriverCurrentUrl('users');",
+                  "err": {},
+                  "uuid": "48ed22da-aff7-40ab-bf00-fdc2a145300f",
+                  "parentUUID": "d2beb7bf-338a-4262-bb40-f8da1095eada",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Should search for the user and navigate to user details view",
+                  "fullTitle": "anonymous-call-rejection Anonymous Call Rejection Should search for the user and navigate to user details view",
+                  "timedOut": null,
+                  "duration": 63816,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].searchAndClickUserList(USER_NAME);\n_utils_users_utils__WEBPACK_IMPORTED_MODULE_12__[\"UsersUtils\"].clickCallingFullView();",
+                  "err": {},
+                  "uuid": "58e98c14-339e-486b-9f14-73dc83c562a8",
+                  "parentUUID": "d2beb7bf-338a-4262-bb40-f8da1095eada",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should have anonymous call rejection in calling overview",
+                  "fullTitle": "anonymous-call-rejection Anonymous Call Rejection should have anonymous call rejection in calling overview",
+                  "timedOut": null,
+                  "duration": 100,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].scrollIntoViewByElement(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].advancedCallSettings.anonymousCallRejection);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].waitUntilElemIsPresent(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].advancedCallSettings.anonymousCallRejection);\ncy.get(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].anonymousCallRejection.anonymousCallRejectionToggleLabel).should('be.visible');",
+                  "err": {},
+                  "uuid": "7d5a4e5c-61b2-4272-97b6-9f1648714010",
+                  "parentUUID": "d2beb7bf-338a-4262-bb40-f8da1095eada",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should be able to turn on anonymous call rejection",
+                  "fullTitle": "anonymous-call-rejection Anonymous Call Rejection should be able to turn on anonymous call rejection",
+                  "timedOut": null,
+                  "duration": 21799,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.wait(_utils_common_types__WEBPACK_IMPORTED_MODULE_7__[\"VERY_SHORT_TIME\"]);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].checkAndSwitchToggleValue(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].anonymousCallRejection.anonymousCallRejectionToggleInput, _pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].anonymousCallRejection.anonymousCallRejectionToggleLabel, false, true);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].waitUntilElemIsPresent(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].saveButtonFS);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].clickWhenVisible(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].saveButtonFS);\n_utils_notifications_utils__WEBPACK_IMPORTED_MODULE_10__[\"NotificationUtils\"].assertToastSuccess('Success', 1000 * 60 * 2);",
+                  "err": {},
+                  "uuid": "362036b5-5395-4100-b786-383a74a2c30a",
+                  "parentUUID": "d2beb7bf-338a-4262-bb40-f8da1095eada",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should be able to turn off anonymous call rejection",
+                  "fullTitle": "anonymous-call-rejection Anonymous Call Rejection should be able to turn off anonymous call rejection",
+                  "timedOut": null,
+                  "duration": 9287,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.wait(_utils_common_types__WEBPACK_IMPORTED_MODULE_7__[\"VERY_SHORT_TIME\"]);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].checkAndSwitchToggleValue(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].anonymousCallRejection.anonymousCallRejectionToggleInput, _pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].anonymousCallRejection.anonymousCallRejectionToggleLabel, true, false);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].waitUntilElemIsPresent(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].saveButtonFS);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].clickWhenVisible(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].saveButtonFS);\n_utils_notifications_utils__WEBPACK_IMPORTED_MODULE_10__[\"NotificationUtils\"].assertToastSuccess('Success', 1000 * 60 * 2);",
+                  "err": {},
+                  "uuid": "17df1bed-668d-4a34-ad23-1d8c4a2562d7",
+                  "parentUUID": "d2beb7bf-338a-4262-bb40-f8da1095eada",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "e05b9a5e-1f6d-4742-933f-b573eda4d9d5",
+                "48ed22da-aff7-40ab-bf00-fdc2a145300f",
+                "58e98c14-339e-486b-9f14-73dc83c562a8",
+                "7d5a4e5c-61b2-4272-97b6-9f1648714010",
+                "362036b5-5395-4100-b786-383a74a2c30a",
+                "17df1bed-668d-4a34-ad23-1d8c4a2562d7"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 123263,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]_[status]_report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mochawesome",
+        "reportFilename": "[name]_[status]_report",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "stats": {
+    "suites": 8,
+    "tests": 9,
+    "passes": 9,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-05-16T18:12:08.085Z",
+    "end": "2025-05-16T18:14:15.263Z",
+    "duration": 127178,
+    "testsRegistered": 9,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "21ccad42-2dcf-4391-b42e-22a89e23289c",
+      "title": "",
+      "fullFile": "src/integration/e2e-cypress/tests/calling/ds/users/call-schedules_spec.ts",
+      "file": "src/integration/e2e-cypress/tests/calling/ds/users/call-schedules_spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "594a66c8-8ea0-4d46-adee-8e6409ee9f8d",
+          "title": "call-schedules",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "790081c7-e2cb-47c5-8de3-2cf8eaa5058e",
+              "title": "Call Schedules",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [],
+              "suites": [
+                {
+                  "uuid": "63978b58-0322-4580-a53a-5281dd2d779c",
+                  "title": "Navigation to Scheudles Page",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Should be on overview page of customer portal",
+                      "fullTitle": "call-schedules Call Schedules Navigation to Scheudles Page Should be on overview page of customer portal",
+                      "timedOut": null,
+                      "duration": 16533,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_7__[\"default\"].expectDriverCurrentUrl('overview');\n_test_utils__WEBPACK_IMPORTED_MODULE_10__[\"TestUtils\"].expectIsPresent(_pages_navigation_page__WEBPACK_IMPORTED_MODULE_1__[\"default\"].leftNav);\ncy.wait(1000);",
+                      "err": {},
+                      "uuid": "3e88c6e8-57e2-45e7-93aa-7c6d60e99860",
+                      "parentUUID": "63978b58-0322-4580-a53a-5281dd2d779c",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Should navigate to Users page",
+                      "fullTitle": "call-schedules Call Schedules Navigation to Scheudles Page Should navigate to Users page",
+                      "timedOut": null,
+                      "duration": 1147,
+                      "state": "passed",
+                      "speed": "fast",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_7__[\"default\"].clickUsersTab();\n_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_7__[\"default\"].expectDriverCurrentUrl('users');",
+                      "err": {},
+                      "uuid": "192be2a0-6110-48a9-8092-0e148743ad1c",
+                      "parentUUID": "63978b58-0322-4580-a53a-5281dd2d779c",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Should search for the user and navigate to user details view",
+                      "fullTitle": "call-schedules Call Schedules Navigation to Scheudles Page Should search for the user and navigate to user details view",
+                      "timedOut": null,
+                      "duration": 63625,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "_test_utils__WEBPACK_IMPORTED_MODULE_10__[\"TestUtils\"].searchAndClickUserList(userName);\n_users_utils__WEBPACK_IMPORTED_MODULE_11__[\"UsersUtils\"].clickCallingFullView();",
+                      "err": {},
+                      "uuid": "6bf23de9-08b1-4b87-8d0c-a2f57305ab97",
+                      "parentUUID": "63978b58-0322-4580-a53a-5281dd2d779c",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "should have feature section in calling overview side panel",
+                      "fullTitle": "call-schedules Call Schedules Navigation to Scheudles Page should have feature section in calling overview side panel",
+                      "timedOut": null,
+                      "duration": 136,
+                      "state": "passed",
+                      "speed": "fast",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "_test_utils__WEBPACK_IMPORTED_MODULE_10__[\"TestUtils\"].scrollIntoViewByElement(featureName);\n_test_utils__WEBPACK_IMPORTED_MODULE_10__[\"TestUtils\"].waitUntilElemIsPresent(featureName);",
+                      "err": {},
+                      "uuid": "e3e96d5d-ec0e-48b0-a75a-e3ec89f8b2fd",
+                      "parentUUID": "63978b58-0322-4580-a53a-5281dd2d779c",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "3e88c6e8-57e2-45e7-93aa-7c6d60e99860",
+                    "192be2a0-6110-48a9-8092-0e148743ad1c",
+                    "6bf23de9-08b1-4b87-8d0c-a2f57305ab97",
+                    "e3e96d5d-ec0e-48b0-a75a-e3ec89f8b2fd"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 81441,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "beba375d-c53d-4924-96ef-d846b47245fb",
+              "title": "Create Schedules",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Should navigate to Create schedule form and create a daily schedule",
+                  "fullTitle": "call-schedules Create Schedules Should navigate to Create schedule form and create a daily schedule",
+                  "timedOut": null,
+                  "duration": 5444,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].clickWhenVisible(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].advancedCallSettings.userSchedules);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].scrollIntoViewByElement(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.newSchedule);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].clickWhenVisible(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.newSchedule);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].waitUntilElemIsPresent(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.scheduleName);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].sendKeys(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.scheduleName, CALL_SCHEDULE_DAILY);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.allDayEvent);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].sendKeys(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.repeatFrequencyForDaily, REPEAT_FREQUENCY);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].sendKeys(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.endScheduleAfterOccurence, END_SCHEDULE_AFTER_N_OCCURENCE);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].clickWhenVisible(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.createScheduleSubmitBtn);\n_utils_notifications_utils__WEBPACK_IMPORTED_MODULE_11__[\"NotificationUtils\"].assertToastSuccess(SUCCESS_TOAST_MESSAGE);",
+                  "err": {},
+                  "uuid": "171ff7db-d8c6-4245-958e-3737507851e2",
+                  "parentUUID": "beba375d-c53d-4924-96ef-d846b47245fb",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "171ff7db-d8c6-4245-958e-3737507851e2"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 5444,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "c3ea8003-bede-4068-b022-9894b9603818",
+              "title": "Edit event under schedules",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Should edit an event under daily schedule",
+                  "fullTitle": "call-schedules Edit event under schedules Should edit an event under daily schedule",
+                  "timedOut": null,
+                  "duration": 10733,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].clickElemContains(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.pageSectionRowPanel, CALL_SCHEDULE_DAILY);\ncy.wait(_utils_common_types__WEBPACK_IMPORTED_MODULE_8__[\"VERY_SHORT_TIME\"]);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].clickFirst(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.eventRowActions);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].waitUntilElemIsPresent(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.eventRowEditAction);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.eventRowEditAction);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].waitUntilElemIsPresent(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.eventScheduleDatePicker);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.recurType);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].clickNth(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.recurTypeList, 2);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].sendKeys(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.repeatFrequencyForWeekly, REPEAT_FREQUENCY);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].forceClick(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.recurOnMonday);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].forceClick(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.recurOnTuesday);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].forceClick(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.recurOnWednesday);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.allowToEndCheckbox);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.createEventSubmitBtn);\n_utils_notifications_utils__WEBPACK_IMPORTED_MODULE_11__[\"NotificationUtils\"].assertToastSuccess(SUCCESS_TOAST_MESSAGE);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].clickElemContains(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.pageSectionRowPanelHeader, CALL_SCHEDULE_DAILY);",
+                  "err": {},
+                  "uuid": "f8914145-e4f9-4b4f-b31d-f86e256ad895",
+                  "parentUUID": "c3ea8003-bede-4068-b022-9894b9603818",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "f8914145-e4f9-4b4f-b31d-f86e256ad895"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 10733,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "46e9cf79-56e9-40a3-8bca-89f743c55f44",
+              "title": "Create Events For Schedule",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Should add a one time event to the existing daily schedule",
+                  "fullTitle": "call-schedules Create Events For Schedule Should add a one time event to the existing daily schedule",
+                  "timedOut": null,
+                  "duration": 9514,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].clickElemContains(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.pageSectionRowPanel, CALL_SCHEDULE_DAILY);\ncy.wait(_utils_common_types__WEBPACK_IMPORTED_MODULE_8__[\"VERY_SHORT_TIME\"]);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].clickFirst(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.addEventBtn);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].waitUntilElemIsPresent(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.eventScheduleDatePicker);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.repeatsCheckbox);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].waitUntilElemIsEnabled(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.createEventSubmitBtn);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.createEventSubmitBtn);\n_utils_notifications_utils__WEBPACK_IMPORTED_MODULE_11__[\"NotificationUtils\"].assertToastSuccess(SUCCESS_TOAST_MESSAGE);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].clickElemContains(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.pageSectionRowPanelHeader, CALL_SCHEDULE_DAILY);",
+                  "err": {},
+                  "uuid": "fc2cdd1f-c107-41f0-965f-28f91d055e71",
+                  "parentUUID": "46e9cf79-56e9-40a3-8bca-89f743c55f44",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "fc2cdd1f-c107-41f0-965f-28f91d055e71"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 9514,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "2da599c6-968c-4f5c-9ee7-b720336ff2aa",
+              "title": "Delete event under schedules",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Should delete an event under daily schedule",
+                  "fullTitle": "call-schedules Delete event under schedules Should delete an event under daily schedule",
+                  "timedOut": null,
+                  "duration": 9521,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].clickElemContains(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.pageSectionRowPanel, CALL_SCHEDULE_DAILY);\ncy.wait(_utils_common_types__WEBPACK_IMPORTED_MODULE_8__[\"VERY_SHORT_TIME\"]);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].clickFirst(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.eventRowActions);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].waitUntilElemIsPresent(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.eventRowDeleteAction);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.eventRowDeleteAction);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.deleteModal);\n_utils_notifications_utils__WEBPACK_IMPORTED_MODULE_11__[\"NotificationUtils\"].assertToastSuccess(SUCCESS_TOAST_MESSAGE);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].clickElemContains(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.pageSectionRowPanelHeader, CALL_SCHEDULE_DAILY);",
+                  "err": {},
+                  "uuid": "4e1ebbaf-d8de-431e-b566-d65a47a090c4",
+                  "parentUUID": "2da599c6-968c-4f5c-9ee7-b720336ff2aa",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "4e1ebbaf-d8de-431e-b566-d65a47a090c4"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 9521,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "c138948d-8c37-4f64-8220-16e78f0125ce",
+              "title": "Delete user Schedules",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Should delete daily and weekly user schedules",
+                  "fullTitle": "call-schedules Delete user Schedules Should delete daily and weekly user schedules",
+                  "timedOut": null,
+                  "duration": 8074,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].clickElemContains(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.pageSectionRowPanel, CALL_SCHEDULE_DAILY);\ncy.wait(_utils_common_types__WEBPACK_IMPORTED_MODULE_8__[\"SUPER_SHORT_TIME\"]);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].scrollIntoViewByElement(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.eventRowActions);\ncy.wait(_utils_common_types__WEBPACK_IMPORTED_MODULE_8__[\"SUPER_SHORT_TIME\"]);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.eventRowActions);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].userSchedules.eventRowDeleteAction);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_12__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.deleteModal);\n_utils_notifications_utils__WEBPACK_IMPORTED_MODULE_11__[\"NotificationUtils\"].assertToastSuccess(SUCCESS_TOAST_MESSAGE);",
+                  "err": {},
+                  "uuid": "6363bda2-93a5-42df-8747-eecd052e07e6",
+                  "parentUUID": "c138948d-8c37-4f64-8220-16e78f0125ce",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "6363bda2-93a5-42df-8747-eecd052e07e6"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 8074,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]_[status]_report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mochawesome",
+        "reportFilename": "[name]_[status]_report",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

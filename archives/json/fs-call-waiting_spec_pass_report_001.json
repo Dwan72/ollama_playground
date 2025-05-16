@@ -1,0 +1,208 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-05-16T18:37:44.706Z",
+    "end": "2025-05-16T18:39:16.757Z",
+    "duration": 92051,
+    "testsRegistered": 5,
+    "passPercent": 60,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "58b806cc-1184-4f9e-a254-1e746202b516",
+      "title": "",
+      "fullFile": "src/integration/e2e-cypress/tests/calling/ds/users/fs-call-waiting_spec.ts",
+      "file": "src/integration/e2e-cypress/tests/calling/ds/users/fs-call-waiting_spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ff19b710-86e2-466c-a0be-715c63ffbb8a",
+          "title": "fs-call-waiting",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "aaa1955d-9312-4393-ada4-b066053b3286",
+              "title": "Call waiting component",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should navigate to Users overview page",
+                  "fullTitle": "fs-call-waiting Call waiting component should navigate to Users overview page",
+                  "timedOut": null,
+                  "duration": 22784,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_9__[\"default\"].clickUsersTab();\n_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_9__[\"default\"].expectDriverCurrentUrl('users');",
+                  "err": {},
+                  "uuid": "41a6d12d-58ff-44b3-9e04-dda75f6573be",
+                  "parentUUID": "aaa1955d-9312-4393-ada4-b066053b3286",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should select a user and open user profile page",
+                  "fullTitle": "fs-call-waiting Call waiting component should select a user and open user profile page",
+                  "timedOut": null,
+                  "duration": 38349,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_10__[\"TestUtils\"].searchAndClickUserList(USER_NAME);",
+                  "err": {},
+                  "uuid": "370255c5-70bf-4bda-ae63-587d3ceef4eb",
+                  "parentUUID": "aaa1955d-9312-4393-ada4-b066053b3286",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should select calling tab under user profile page",
+                  "fullTitle": "fs-call-waiting Call waiting component should select calling tab under user profile page",
+                  "timedOut": null,
+                  "duration": 25525,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_users_utils__WEBPACK_IMPORTED_MODULE_11__[\"UsersUtils\"].clickCallingFullView();",
+                  "err": {},
+                  "uuid": "e2c82ba6-8781-40f7-9bff-210d09b7419e",
+                  "parentUUID": "aaa1955d-9312-4393-ada4-b066053b3286",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should enable \"Call waiting\" toggle in \"Call handling\" section",
+                  "fullTitle": "fs-call-waiting Call waiting component should enable \"Call waiting\" toggle in \"Call handling\" section",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_10__[\"TestUtils\"].waitForSpinnerToFinish();\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_10__[\"TestUtils\"].scrollIntoViewByElement(_pages_calling_call_settings_call_handling_page__WEBPACK_IMPORTED_MODULE_0__[\"callHandling\"].callWaiting.toggle);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_10__[\"TestUtils\"].expectElementIsUnchecked(_pages_calling_call_settings_call_handling_page__WEBPACK_IMPORTED_MODULE_0__[\"callHandling\"].callWaiting.toggleInput);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_10__[\"TestUtils\"].clickWhenVisible(_pages_calling_call_settings_call_handling_page__WEBPACK_IMPORTED_MODULE_0__[\"callHandling\"].callWaiting.toggle);\n_utils_advanced_features_call_handling_utils__WEBPACK_IMPORTED_MODULE_6__[\"CallHandlingUtils\"].verifySave();\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_10__[\"TestUtils\"].expectElementIsChecked(_pages_calling_call_settings_call_handling_page__WEBPACK_IMPORTED_MODULE_0__[\"callHandling\"].callWaiting.toggleInput);",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying after 2000ms: Expected to find element: `[data-test-id=\"save-cancel-bar--save\"]`, but never found it.",
+                    "estack": "AssertionError: Timed out retrying after 2000ms: Expected to find element: `[data-test-id=\"save-cancel-bar--save\"]`, but never found it.\n    at TestUtils.clickAndVerifyToast (webpack:///./src/integration/e2e-cypress/utils/test.utils.ts:73:0)\n    at CallHandlingUtils.verifySave (webpack:///./src/integration/e2e-cypress/utils/advanced-features/call-handling.utils.ts:81:17)\n    at Context.eval (webpack:///./src/integration/e2e-cypress/tests/calling/ds/users/fs-call-waiting_spec.ts:73:29)",
+                    "diff": null
+                  },
+                  "uuid": "aa0f6bd2-56fd-48f1-8b86-cddd312d4b94",
+                  "parentUUID": "aaa1955d-9312-4393-ada4-b066053b3286",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should disable \"Call waiting\" toggle in \"Call handling\" section",
+                  "fullTitle": "fs-call-waiting Call waiting component should disable \"Call waiting\" toggle in \"Call handling\" section",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_10__[\"TestUtils\"].scrollIntoViewByElement(_pages_calling_call_settings_call_handling_page__WEBPACK_IMPORTED_MODULE_0__[\"callHandling\"].callWaiting.toggle);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_10__[\"TestUtils\"].expectElementIsChecked(_pages_calling_call_settings_call_handling_page__WEBPACK_IMPORTED_MODULE_0__[\"callHandling\"].callWaiting.toggleInput);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_10__[\"TestUtils\"].clickWhenVisible(_pages_calling_call_settings_call_handling_page__WEBPACK_IMPORTED_MODULE_0__[\"callHandling\"].callWaiting.toggle);\n_utils_advanced_features_call_handling_utils__WEBPACK_IMPORTED_MODULE_6__[\"CallHandlingUtils\"].verifySave();\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_10__[\"TestUtils\"].expectElementIsUnchecked(_pages_calling_call_settings_call_handling_page__WEBPACK_IMPORTED_MODULE_0__[\"callHandling\"].callWaiting.toggleInput);",
+                  "err": {},
+                  "uuid": "13a578de-4b7c-492a-a3f0-1b273a26ac3d",
+                  "parentUUID": "aaa1955d-9312-4393-ada4-b066053b3286",
+                  "isHook": false,
+                  "skipped": true
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "41a6d12d-58ff-44b3-9e04-dda75f6573be",
+                "370255c5-70bf-4bda-ae63-587d3ceef4eb",
+                "e2c82ba6-8781-40f7-9bff-210d09b7419e"
+              ],
+              "failures": [
+                "aa0f6bd2-56fd-48f1-8b86-cddd312d4b94"
+              ],
+              "pending": [],
+              "skipped": [
+                "13a578de-4b7c-492a-a3f0-1b273a26ac3d"
+              ],
+              "duration": 86658,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]_[status]_report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mochawesome",
+        "reportFilename": "[name]_[status]_report",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-05-16T18:07:26.766Z",
+    "end": "2025-05-16T18:09:26.514Z",
+    "duration": 119748,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0935d858-aa4f-4e84-a783-3ad500a65f08",
+      "title": "",
+      "fullFile": "src/integration/e2e-cypress/tests/calling/ds/users/call-notify_spec.ts",
+      "file": "src/integration/e2e-cypress/tests/calling/ds/users/call-notify_spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "229a5b27-8cc2-4a98-8bb1-fcc0eb1db888",
+          "title": "call-schedules",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "2c305129-a75f-4642-bdc0-131a5ea8fdf9",
+              "title": "Call Notify",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Should be on overview page of customer portal",
+                  "fullTitle": "call-schedules Call Notify Should be on overview page of customer portal",
+                  "timedOut": null,
+                  "duration": 19714,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_11__[\"default\"].expectDriverCurrentUrl('overview');\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].expectIsPresent(_pages_navigation_page__WEBPACK_IMPORTED_MODULE_1__[\"default\"].leftNav);",
+                  "err": {},
+                  "uuid": "4da3902e-ba17-4a38-8bdf-265e951b36a6",
+                  "parentUUID": "2c305129-a75f-4642-bdc0-131a5ea8fdf9",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Should navigate to Users page",
+                  "fullTitle": "call-schedules Call Notify Should navigate to Users page",
+                  "timedOut": null,
+                  "duration": 1076,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_11__[\"default\"].clickUsersTab();\n_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_11__[\"default\"].expectDriverCurrentUrl('users');",
+                  "err": {},
+                  "uuid": "6f9b47a2-d898-4191-88bf-9078015e33b8",
+                  "parentUUID": "2c305129-a75f-4642-bdc0-131a5ea8fdf9",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Should search for the user and navigate to user details view",
+                  "fullTitle": "call-schedules Call Notify Should search for the user and navigate to user details view",
+                  "timedOut": null,
+                  "duration": 63471,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].searchAndClickUserList(USER_NAME);\n_utils_users_utils__WEBPACK_IMPORTED_MODULE_14__[\"UsersUtils\"].clickCallingFullView();",
+                  "err": {},
+                  "uuid": "59e10c06-93ea-4db0-89a0-8102df67f3bc",
+                  "parentUUID": "2c305129-a75f-4642-bdc0-131a5ea8fdf9",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should have call notify section in calling overview side panel",
+                  "fullTitle": "call-schedules Call Notify should have call notify section in calling overview side panel",
+                  "timedOut": null,
+                  "duration": 2554,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].scrollIntoViewByElement(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].advancedCallSettings.callNotify);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].waitForText(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].advancedCallSettings.callNotify, CALL_NOTIFY_STATUS_DISABLED);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].advancedCallSettings.callNotify);\ncy.wait(_utils_common_types__WEBPACK_IMPORTED_MODULE_9__[\"SUPER_SHORT_TIME\"]);",
+                  "err": {},
+                  "uuid": "b7383f12-c275-47a2-8402-361abacfd45b",
+                  "parentUUID": "2c305129-a75f-4642-bdc0-131a5ea8fdf9",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "4da3902e-ba17-4a38-8bdf-265e951b36a6",
+                "6f9b47a2-d898-4191-88bf-9078015e33b8",
+                "59e10c06-93ea-4db0-89a0-8102df67f3bc",
+                "b7383f12-c275-47a2-8402-361abacfd45b"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 86815,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "afbfb54e-131c-46f8-80a4-afb5c743b83f",
+              "title": "Apply Schedules",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should navigate to call notify and add a schedule for any numbers",
+                  "fullTitle": "call-schedules Apply Schedules should navigate to call notify and add a schedule for any numbers",
+                  "timedOut": null,
+                  "duration": 8769,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].waitUntilElemIsPresent(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].callNotify.callNotifyToggle);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.applySchedule);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].waitUntilElemIsPresent(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.applySchedulesDropdown);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.applySchedulesDropdown);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].clickFromDropdown(SCHEDULE_NAME_FOR_ANY_NUMBER_CALL_NOTIFY, true);\ncy.wait(_utils_common_types__WEBPACK_IMPORTED_MODULE_9__[\"SUPER_SHORT_TIME\"]);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.applySchedulesCallsFrom);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].clickNth(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.callsFromDropdownList, 1);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].forceClick(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.applySchedulesRadioNotify);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.applyScheduleSubmitButton);\n_utils_notifications_utils__WEBPACK_IMPORTED_MODULE_12__[\"NotificationUtils\"].assertToastSuccess('Success', _utils_common_types__WEBPACK_IMPORTED_MODULE_9__[\"SUPER_SHORT_TIME\"]);\ncy.wait(_utils_common_types__WEBPACK_IMPORTED_MODULE_9__[\"SUPER_SHORT_TIME\"]);",
+                  "err": {},
+                  "uuid": "4b4e1ccb-0f7e-4662-83d7-3270cef37d63",
+                  "parentUUID": "afbfb54e-131c-46f8-80a4-afb5c743b83f",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should enable call notify and set e-mail address",
+                  "fullTitle": "call-schedules Apply Schedules should enable call notify and set e-mail address",
+                  "timedOut": null,
+                  "duration": 5191,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].clickWhenVisible(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].callNotify.callNotifyToggle);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].clear(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].callNotify.callNotifyEmail);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].sendKeys(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].callNotify.callNotifyEmail, RANDOM_EMAIL);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].clickWhenVisible(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].saveButtonFS);\n_utils_notifications_utils__WEBPACK_IMPORTED_MODULE_12__[\"NotificationUtils\"].assertToastSuccess('Success', _utils_common_types__WEBPACK_IMPORTED_MODULE_9__[\"SUPER_SHORT_TIME\"]);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.callingBackButton);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].scrollIntoViewByElement(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].advancedCallSettings.callNotify);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].waitForText(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].advancedCallSettings.callNotify, CALL_NOTIFY_STATUS_ENABLED);",
+                  "err": {},
+                  "uuid": "14e6afb1-8748-4b64-896a-9b6f8c6f887c",
+                  "parentUUID": "afbfb54e-131c-46f8-80a4-afb5c743b83f",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should delete from notify me table for call notify",
+                  "fullTitle": "call-schedules Apply Schedules should delete from notify me table for call notify",
+                  "timedOut": null,
+                  "duration": 16747,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].advancedCallSettings.callNotify);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].waitUntilElemIsPresent(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].callNotify.callNotifyToggle);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].getRowInTableContains(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.applySchedulesTable, SCHEDULE_NAME_FOR_ANY_NUMBER_CALL_NOTIFY)\n    .scrollIntoView()\n    .find(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.applScheduleMoreOptions)\n    .should('be.visible')\n    .click();\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].waitUntilElemIsPresent(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.delete);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.delete);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.deleteModal);\ncy.wait(_utils_common_types__WEBPACK_IMPORTED_MODULE_9__[\"SUPER_SHORT_TIME\"]);\n_utils_notifications_utils__WEBPACK_IMPORTED_MODULE_12__[\"NotificationUtils\"].assertToastSuccess('Success', _utils_common_types__WEBPACK_IMPORTED_MODULE_9__[\"SUPER_SHORT_TIME\"]);",
+                  "err": {},
+                  "uuid": "d0374007-3d89-46f3-9bfc-6dd21a368478",
+                  "parentUUID": "afbfb54e-131c-46f8-80a4-afb5c743b83f",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "4b4e1ccb-0f7e-4662-83d7-3270cef37d63",
+                "14e6afb1-8748-4b64-896a-9b6f8c6f887c",
+                "d0374007-3d89-46f3-9bfc-6dd21a368478"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 30707,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]_[status]_report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mochawesome",
+        "reportFilename": "[name]_[status]_report",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

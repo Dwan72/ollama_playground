@@ -1,0 +1,221 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-05-16T18:50:35.925Z",
+    "end": "2025-05-16T18:52:05.574Z",
+    "duration": 89649,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5a49ce89-2db9-42c5-b6b0-d56ea5ca3181",
+      "title": "",
+      "fullFile": "src/integration/e2e-cypress/tests/calling/ds/users/user-calling-timezone_spec.ts",
+      "file": "src/integration/e2e-cypress/tests/calling/ds/users/user-calling-timezone_spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ec19ad38-164e-4158-9da7-6b50322024a1",
+          "title": "user-calling-timezone-fs",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "117e03f5-5072-4e72-8981-1e07f6b4e7db",
+              "title": "Timezone",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Should be on overview page of customer portal",
+                  "fullTitle": "user-calling-timezone-fs Timezone Should be on overview page of customer portal",
+                  "timedOut": null,
+                  "duration": 13766,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_9__[\"default\"].expectDriverCurrentUrl('overview');\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].expectIsPresent(_pages_navigation_page__WEBPACK_IMPORTED_MODULE_2__[\"default\"].leftNav);",
+                  "err": {},
+                  "uuid": "415e6c77-0c97-4b1e-9b9e-63cbcf22dab6",
+                  "parentUUID": "117e03f5-5072-4e72-8981-1e07f6b4e7db",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Should navigate to Users page",
+                  "fullTitle": "user-calling-timezone-fs Timezone Should navigate to Users page",
+                  "timedOut": null,
+                  "duration": 1054,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_9__[\"default\"].clickUsersTab();\n_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_9__[\"default\"].expectDriverCurrentUrl('users');",
+                  "err": {},
+                  "uuid": "b41894ce-72c1-477c-8bf3-784a023ccca6",
+                  "parentUUID": "117e03f5-5072-4e72-8981-1e07f6b4e7db",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Should search for the user and check timezone",
+                  "fullTitle": "user-calling-timezone-fs Timezone Should search for the user and check timezone",
+                  "timedOut": null,
+                  "duration": 63237,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].searchAndClickUserList(USER_NAME);\n_utils_users_utils__WEBPACK_IMPORTED_MODULE_12__[\"UsersUtils\"].clickCallingFullView();",
+                  "err": {},
+                  "uuid": "a41aa2f3-f87c-4cd0-89d9-cb798751ae4f",
+                  "parentUUID": "117e03f5-5072-4e72-8981-1e07f6b4e7db",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should expand timezone accordion",
+                  "fullTitle": "user-calling-timezone-fs Timezone should expand timezone accordion",
+                  "timedOut": null,
+                  "duration": 524,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].scrollIntoViewByElement(_pages_calling_call_settings_voicemail_page__WEBPACK_IMPORTED_MODULE_1__[\"VoicemailNewDesignPage\"].timezone.callingTimezoneSection);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].click(_pages_calling_call_settings_voicemail_page__WEBPACK_IMPORTED_MODULE_1__[\"VoicemailNewDesignPage\"].timezone.callingTimezoneSection);",
+                  "err": {},
+                  "uuid": "4b84f81a-ad6d-4374-825b-e6285d71bc4d",
+                  "parentUUID": "117e03f5-5072-4e72-8981-1e07f6b4e7db",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Should update value of timezone to first option",
+                  "fullTitle": "user-calling-timezone-fs Timezone Should update value of timezone to first option",
+                  "timedOut": null,
+                  "duration": 4473,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].scrollExpectIsDisplayed(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].advancedCallSettings.accountTimezone);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].selectFirstOptionFromDropdown(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].accountTimezone.dropdown);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].clickWhenVisible(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].saveButtonFS);\n_utils_notifications_utils__WEBPACK_IMPORTED_MODULE_10__[\"NotificationUtils\"].assertToastSuccess('successfully', 1000 * 60 * 2);",
+                  "err": {},
+                  "uuid": "39793e78-3796-4d29-aa3e-5e5b4e687752",
+                  "parentUUID": "117e03f5-5072-4e72-8981-1e07f6b4e7db",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Should update value of timezone to last option",
+                  "fullTitle": "user-calling-timezone-fs Timezone Should update value of timezone to last option",
+                  "timedOut": null,
+                  "duration": 4382,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].scrollExpectIsDisplayed(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].advancedCallSettings.accountTimezone);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].selectLastOptionFromDropdown(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].accountTimezone.dropdown);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].clickWhenVisible(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].saveButtonFS);\n_utils_notifications_utils__WEBPACK_IMPORTED_MODULE_10__[\"NotificationUtils\"].assertToastSuccess('successfully', 1000 * 60 * 2);",
+                  "err": {},
+                  "uuid": "3f7f736b-af12-4751-8360-1369bd978745",
+                  "parentUUID": "117e03f5-5072-4e72-8981-1e07f6b4e7db",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "415e6c77-0c97-4b1e-9b9e-63cbcf22dab6",
+                "b41894ce-72c1-477c-8bf3-784a023ccca6",
+                "a41aa2f3-f87c-4cd0-89d9-cb798751ae4f",
+                "4b84f81a-ad6d-4374-825b-e6285d71bc4d",
+                "39793e78-3796-4d29-aa3e-5e5b4e687752",
+                "3f7f736b-af12-4751-8360-1369bd978745"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 87436,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]_[status]_report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mochawesome",
+        "reportFilename": "[name]_[status]_report",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

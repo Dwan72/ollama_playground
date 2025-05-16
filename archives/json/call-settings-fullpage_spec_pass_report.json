@@ -1,0 +1,279 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 8,
+    "passes": 8,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-05-16T18:07:06.931Z",
+    "end": "2025-05-16T18:08:57.740Z",
+    "duration": 110809,
+    "testsRegistered": 8,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e10ae233-f94a-42c3-ab40-169d4456a3b6",
+      "title": "",
+      "fullFile": "src/integration/e2e-cypress/tests/calling/ds/users/call-settings-fullpage_spec.ts",
+      "file": "src/integration/e2e-cypress/tests/calling/ds/users/call-settings-fullpage_spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "edafeb6a-cc93-40fd-874b-6fe39134fa73",
+          "title": "call-settings-fullpage",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "80964438-26ae-4288-9526-5907b59c73d0",
+              "title": "should go into user overview and test",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should be on overview page of customer portal",
+                  "fullTitle": "call-settings-fullpage should go into user overview and test should be on overview page of customer portal",
+                  "timedOut": null,
+                  "duration": 16924,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_10__[\"default\"].clickOverviewTab();\n_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_10__[\"default\"].expectDriverCurrentUrl('overview');\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].expectIsDisplayed(_pages_navigation_page__WEBPACK_IMPORTED_MODULE_1__[\"default\"].leftNav);",
+                  "err": {},
+                  "uuid": "84328d5e-68a2-4d17-9a24-5e88a341d405",
+                  "parentUUID": "80964438-26ae-4288-9526-5907b59c73d0",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should navigate to Users overview page",
+                  "fullTitle": "call-settings-fullpage should go into user overview and test should navigate to Users overview page",
+                  "timedOut": null,
+                  "duration": 2111,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_10__[\"default\"].clickUsersTab();\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].waitForSpinnerToFinish();\n_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_10__[\"default\"].expectDriverCurrentUrl('users');",
+                  "err": {},
+                  "uuid": "15854039-0d86-4c40-827e-64470bdfcdc1",
+                  "parentUUID": "80964438-26ae-4288-9526-5907b59c73d0",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "84328d5e-68a2-4d17-9a24-5e88a341d405",
+                "15854039-0d86-4c40-827e-64470bdfcdc1"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 19035,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "f12d77a7-d8ae-4ddc-b722-d0875832984b",
+              "title": "Call Application for users validation flow",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should select a user and open user detail side panel",
+                  "fullTitle": "call-settings-fullpage Call Application for users validation flow should select a user and open user detail side panel",
+                  "timedOut": null,
+                  "duration": 62682,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].searchAndClickUserList(USER_NAME);\n_utils_users_utils__WEBPACK_IMPORTED_MODULE_12__[\"UsersUtils\"].clickCallingFullView();",
+                  "err": {},
+                  "uuid": "208d07f3-83c7-401e-b041-3c2d80593914",
+                  "parentUUID": "f12d77a7-d8ae-4ddc-b722-d0875832984b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should have Applications in calling advance settings overview side panel",
+                  "fullTitle": "call-settings-fullpage Call Application for users validation flow should have Applications in calling advance settings overview side panel",
+                  "timedOut": null,
+                  "duration": 5626,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.wait(_utils_common_types__WEBPACK_IMPORTED_MODULE_8__[\"VERY_SHORT_TIME\"]); // wait for api to complete\ncy.get(applications.applicationRowFS).scrollIntoView();\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].clickLastVisible(applications.applicationRowFS);",
+                  "err": {},
+                  "uuid": "31866298-d47b-4f55-a173-f1c6bd40b64f",
+                  "parentUUID": "f12d77a7-d8ae-4ddc-b722-d0875832984b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should verify default values",
+                  "fullTitle": "call-settings-fullpage Call Application for users validation flow should verify default values",
+                  "timedOut": null,
+                  "duration": 5083,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.wait(_utils_common_types__WEBPACK_IMPORTED_MODULE_8__[\"VERY_SHORT_TIME\"]); // wait for api to complete\ncy.get(applications.clickToDial.checkboxInput).should('be.checked');\ncy.get(applications.groupPages.checkboxInput).should('not.be.checked');\ncy.get(applications.callPark.checkboxInput).should('be.checked');\ncy.get(applications.desktop.checkboxInput).should('be.checked');\ncy.get(applications.mobile.checkboxInput).should('be.checked');\ncy.get(applications.tablet.checkboxInput).should('be.checked');",
+                  "err": {},
+                  "uuid": "607cdf23-4962-40fc-b14e-d166b83d2a62",
+                  "parentUUID": "f12d77a7-d8ae-4ddc-b722-d0875832984b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should disable Ring all devices and applications whenever click to dial call are made and save",
+                  "fullTitle": "call-settings-fullpage Call Application for users validation flow should disable Ring all devices and applications whenever click to dial call are made and save",
+                  "timedOut": null,
+                  "duration": 5914,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].clickLastVisible(applications.clickToDial.checkboxFS);\ncy.wait(_utils_common_types__WEBPACK_IMPORTED_MODULE_8__[\"SUPER_SHORT_TIME\"]);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].clickAndVerifyToast(applications.saveButtonFS, 'Success');\ncy.get(applications.clickToDial.checkboxInput).should('not.be.checked');",
+                  "err": {},
+                  "uuid": "26809e4a-473a-47de-b5b1-06e7553659ae",
+                  "parentUUID": "f12d77a7-d8ae-4ddc-b722-d0875832984b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should disable desktop application and save",
+                  "fullTitle": "call-settings-fullpage Call Application for users validation flow should disable desktop application and save",
+                  "timedOut": null,
+                  "duration": 5872,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].clickLastVisible(applications.desktop.checkboxFS);\ncy.wait(_utils_common_types__WEBPACK_IMPORTED_MODULE_8__[\"SUPER_SHORT_TIME\"]);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].clickAndVerifyToast(applications.saveButtonFS, 'Success');\ncy.get(applications.desktop.checkboxInput).should('not.be.checked');",
+                  "err": {},
+                  "uuid": "c4126bb8-ba60-44e6-8f8e-0053804bc111",
+                  "parentUUID": "f12d77a7-d8ae-4ddc-b722-d0875832984b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should reset applications to enabled value",
+                  "fullTitle": "call-settings-fullpage Call Application for users validation flow should reset applications to enabled value",
+                  "timedOut": null,
+                  "duration": 4042,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].clickLastVisible(applications.clickToDial.checkboxFS);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].clickLastVisible(applications.desktop.checkboxFS);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_11__[\"TestUtils\"].clickAndVerifyToast(applications.saveButtonFS, 'Success');\ncy.get(applications.desktop.checkboxInput).should('be.checked');\ncy.get(applications.clickToDial.checkboxInput).should('be.checked');",
+                  "err": {},
+                  "uuid": "dec0c709-4b2e-4045-bb14-effafcd27c3c",
+                  "parentUUID": "f12d77a7-d8ae-4ddc-b722-d0875832984b",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "208d07f3-83c7-401e-b041-3c2d80593914",
+                "31866298-d47b-4f55-a173-f1c6bd40b64f",
+                "607cdf23-4962-40fc-b14e-d166b83d2a62",
+                "26809e4a-473a-47de-b5b1-06e7553659ae",
+                "c4126bb8-ba60-44e6-8f8e-0053804bc111",
+                "dec0c709-4b2e-4045-bb14-effafcd27c3c"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 89219,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]_[status]_report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mochawesome",
+        "reportFilename": "[name]_[status]_report",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

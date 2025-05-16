@@ -1,0 +1,298 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 8,
+    "passes": 8,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-05-16T18:27:34.086Z",
+    "end": "2025-05-16T18:29:26.797Z",
+    "duration": 112711,
+    "testsRegistered": 8,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "edf5b3a0-28d7-4e3e-b773-f94d7dd1de2b",
+      "title": "",
+      "fullFile": "src/integration/e2e-cypress/tests/calling/ds/users/selective-reject-fs_spec.ts",
+      "file": "src/integration/e2e-cypress/tests/calling/ds/users/selective-reject-fs_spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5f6ae2e6-301e-45cb-a30c-fcd11d89141a",
+          "title": "Selective-Reject-fs",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "e6e1c565-f5a4-4b74-9a37-3b03ac107ca7",
+              "title": "Selective Reject",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [],
+              "suites": [
+                {
+                  "uuid": "b891b0dc-2446-409f-9970-410c65e00863",
+                  "title": "Navigation to Selective Reject Page",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Should be on overview page of customer portal",
+                      "fullTitle": "Selective-Reject-fs Selective Reject Navigation to Selective Reject Page Should be on overview page of customer portal",
+                      "timedOut": null,
+                      "duration": 20083,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_7__[\"default\"].expectDriverCurrentUrl('overview');\n_test_utils__WEBPACK_IMPORTED_MODULE_10__[\"TestUtils\"].expectIsPresent(_pages_navigation_page__WEBPACK_IMPORTED_MODULE_1__[\"default\"].leftNav);\ncy.wait(1000);",
+                      "err": {},
+                      "uuid": "2fb7f781-f556-4ba0-9c74-957bacdd42f2",
+                      "parentUUID": "b891b0dc-2446-409f-9970-410c65e00863",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Should navigate to Users page",
+                      "fullTitle": "Selective-Reject-fs Selective Reject Navigation to Selective Reject Page Should navigate to Users page",
+                      "timedOut": null,
+                      "duration": 969,
+                      "state": "passed",
+                      "speed": "fast",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_7__[\"default\"].clickUsersTab();\n_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_7__[\"default\"].expectDriverCurrentUrl('users');",
+                      "err": {},
+                      "uuid": "431b0654-3663-43ee-b1ac-0349cd6d5e2a",
+                      "parentUUID": "b891b0dc-2446-409f-9970-410c65e00863",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Should search for the user and navigate to user details view",
+                      "fullTitle": "Selective-Reject-fs Selective Reject Navigation to Selective Reject Page Should search for the user and navigate to user details view",
+                      "timedOut": null,
+                      "duration": 63334,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "_test_utils__WEBPACK_IMPORTED_MODULE_10__[\"TestUtils\"].searchAndClickUserList(userName);\n_users_utils__WEBPACK_IMPORTED_MODULE_11__[\"UsersUtils\"].clickCallingFullView();",
+                      "err": {},
+                      "uuid": "faf01018-7bb5-4d82-8ebb-fdd2d2a64ae9",
+                      "parentUUID": "b891b0dc-2446-409f-9970-410c65e00863",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "should have feature section in calling overview side panel",
+                      "fullTitle": "Selective-Reject-fs Selective Reject Navigation to Selective Reject Page should have feature section in calling overview side panel",
+                      "timedOut": null,
+                      "duration": 62,
+                      "state": "passed",
+                      "speed": "fast",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "_test_utils__WEBPACK_IMPORTED_MODULE_10__[\"TestUtils\"].scrollIntoViewByElement(featureName);\n_test_utils__WEBPACK_IMPORTED_MODULE_10__[\"TestUtils\"].waitUntilElemIsPresent(featureName);",
+                      "err": {},
+                      "uuid": "5ccbc042-b6c5-42a4-b981-9f8c78ec0dd5",
+                      "parentUUID": "b891b0dc-2446-409f-9970-410c65e00863",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "2fb7f781-f556-4ba0-9c74-957bacdd42f2",
+                    "431b0654-3663-43ee-b1ac-0349cd6d5e2a",
+                    "faf01018-7bb5-4d82-8ebb-fdd2d2a64ae9",
+                    "5ccbc042-b6c5-42a4-b981-9f8c78ec0dd5"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 84448,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                },
+                {
+                  "uuid": "8a8760f9-bebf-441b-bca0-9e72045dc6bf",
+                  "title": "Apply Schedules for selective reject",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "should navigate to selective reject and add a schedule for any numbers",
+                      "fullTitle": "Selective-Reject-fs Selective Reject Apply Schedules for selective reject should navigate to selective reject and add a schedule for any numbers",
+                      "timedOut": null,
+                      "duration": 9362,
+                      "state": "passed",
+                      "speed": "medium",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].advancedCallSettings.selectivelyReject);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].waitUntilElemIsPresent(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].selectivelyReject.toggle);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].clickWhenVisible(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.applySchedule);\n_utils_advanced_features_apply_schedules_utils__WEBPACK_IMPORTED_MODULE_7__[\"ApplySchedulesUtils\"].applySchedule({\n    scheduleName: SCHEDULE_NAME_SELECTIVE_REJECT,\n    callsFromType: _utils_advanced_features_apply_schedules_utils__WEBPACK_IMPORTED_MODULE_7__[\"SchedulesCallsFromType\"].ANY_PHONE_NUMBER,\n    notifyType: _utils_advanced_features_apply_schedules_utils__WEBPACK_IMPORTED_MODULE_7__[\"SchedulesNotificationType\"].SEND_NOTIFY,\n});",
+                      "err": {},
+                      "uuid": "77a3fb33-b0a7-4ea7-b54c-ebb95f171d10",
+                      "parentUUID": "8a8760f9-bebf-441b-bca0-9e72045dc6bf",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "should click on selective reject toggle and click save",
+                      "fullTitle": "Selective-Reject-fs Selective Reject Apply Schedules for selective reject should click on selective reject toggle and click save",
+                      "timedOut": null,
+                      "duration": 422,
+                      "state": "passed",
+                      "speed": "fast",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.callingBackButton);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].scrollIntoViewByElement(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].advancedCallSettings.selectivelyReject);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].waitUntilElemIsPresent(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].advancedCallSettings.selectivelyReject);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].waitForText(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].selectivelyReject.selectivelyRejectToggleText, TOGGLE_ON);",
+                      "err": {},
+                      "uuid": "e667c617-1003-4000-89fe-0ed645f58f2a",
+                      "parentUUID": "8a8760f9-bebf-441b-bca0-9e72045dc6bf",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "should edit the schedule to specific number",
+                      "fullTitle": "Selective-Reject-fs Selective Reject Apply Schedules for selective reject should edit the schedule to specific number",
+                      "timedOut": null,
+                      "duration": 10141,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].advancedCallSettings.selectivelyReject);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].waitUntilElemIsPresent(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].selectivelyReject.toggle);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].scrollIntoViewByElement(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.applScheduleMoreOptions);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].getRowInTableContains(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.applySchedulesTable, SCHEDULE_NAME_SELECTIVE_REJECT)\n    .find(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.applScheduleMoreOptions)\n    .should('be.visible')\n    .click();\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.editButton);\n_utils_advanced_features_apply_schedules_utils__WEBPACK_IMPORTED_MODULE_7__[\"ApplySchedulesUtils\"].applySchedule({\n    scheduleName: SCHEDULE_NAME_SELECTIVE_REJECT,\n    callsFromType: _utils_advanced_features_apply_schedules_utils__WEBPACK_IMPORTED_MODULE_7__[\"SchedulesCallsFromType\"].SPECIFIC_NUMBERS,\n    notifyType: _utils_advanced_features_apply_schedules_utils__WEBPACK_IMPORTED_MODULE_7__[\"SchedulesNotificationType\"].SEND_NOTIFY,\n    phoneNumber: MOBILE_NUMBER,\n}, true);",
+                      "err": {},
+                      "uuid": "0163ed38-b15f-4485-b5e5-66c7e0751d42",
+                      "parentUUID": "8a8760f9-bebf-441b-bca0-9e72045dc6bf",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "should delete from reject table",
+                      "fullTitle": "Selective-Reject-fs Selective Reject Apply Schedules for selective reject should delete from reject table",
+                      "timedOut": null,
+                      "duration": 6277,
+                      "state": "passed",
+                      "speed": "medium",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].getRowInTableContains(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.applySchedulesTable, SCHEDULE_NAME_SELECTIVE_REJECT)\n    .find(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.applScheduleMoreOptions)\n    .should('be.visible')\n    .click();\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].click(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.delete);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_13__[\"TestUtils\"].clickWhenVisible(_pages_calling_call_settings_advanced_feature_settings_page__WEBPACK_IMPORTED_MODULE_0__[\"AdvanceFeatureSettings\"].common.deleteModal);\n_utils_notifications_utils__WEBPACK_IMPORTED_MODULE_12__[\"NotificationUtils\"].assertToastSuccess('Success');",
+                      "err": {},
+                      "uuid": "52dd858b-61d8-4366-b661-7ac9ee0ca39b",
+                      "parentUUID": "8a8760f9-bebf-441b-bca0-9e72045dc6bf",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "77a3fb33-b0a7-4ea7-b54c-ebb95f171d10",
+                    "e667c617-1003-4000-89fe-0ed645f58f2a",
+                    "0163ed38-b15f-4485-b5e5-66c7e0751d42",
+                    "52dd858b-61d8-4366-b661-7ac9ee0ca39b"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 26202,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]_[status]_report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mochawesome",
+        "reportFilename": "[name]_[status]_report",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

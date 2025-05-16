@@ -1,0 +1,339 @@
+{
+  "stats": {
+    "suites": 8,
+    "tests": 5,
+    "passes": 0,
+    "pending": 6,
+    "failures": -1,
+    "start": "2025-05-16T18:06:56.495Z",
+    "end": "2025-05-16T18:06:56.648Z",
+    "duration": 153,
+    "testsRegistered": 6,
+    "passPercent": null,
+    "pendingPercent": 100,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 6,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "cc95891f-1fe6-45ea-94d0-4df0f6b945e8",
+      "title": "",
+      "fullFile": "src/integration/e2e-cypress/tests/calling/ds/users/call-license-upgrade-BCWC_spec.ts",
+      "file": "src/integration/e2e-cypress/tests/calling/ds/users/call-license-upgrade-BCWC_spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "580cc5f3-b194-4a02-bf4d-1a2f5c6f3a92",
+          "title": "call-license-upgrade-BCWC_spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "cdcc41e9-fae3-4689-b99c-8017de9daf81",
+              "title": "navigate to users",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should navigate to users page",
+                  "fullTitle": "call-license-upgrade-BCWC_spec navigate to users should navigate to users page",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "pending",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_7__[\"default\"].expectDriverCurrentUrl('overview');\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_8__[\"TestUtils\"].expectIsPresent(_pages_navigation_page__WEBPACK_IMPORTED_MODULE_0__[\"default\"].leftNav);\n_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_7__[\"default\"].clickUsersTab();\n_utils_navigation_utils__WEBPACK_IMPORTED_MODULE_7__[\"default\"].expectDriverCurrentUrl('users');",
+                  "err": {},
+                  "uuid": "15480ed7-9607-446a-be2f-5dc96a3390cf",
+                  "parentUUID": "cdcc41e9-fae3-4689-b99c-8017de9daf81",
+                  "isHook": false,
+                  "skipped": true
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [
+                "15480ed7-9607-446a-be2f-5dc96a3390cf"
+              ],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "bc07c6a2-add5-4fd6-a26b-b6f05b4881f9",
+              "title": "Validate user has basic license before upgrading",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [],
+              "suites": [
+                {
+                  "uuid": "150ec089-e7f6-4f7b-9b82-acd6aa935d00",
+                  "title": "User validation flow",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Verify that user has correct entitlements",
+                      "fullTitle": "call-license-upgrade-BCWC_spec Validate user has basic license before upgrading User validation flow Verify that user has correct entitlements",
+                      "timedOut": null,
+                      "duration": 0,
+                      "state": "pending",
+                      "speed": null,
+                      "pass": false,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_8__[\"TestUtils\"].waitUntilElemIsPresent(_utils_test_utils__WEBPACK_IMPORTED_MODULE_8__[\"TestUtils\"].SEARCH_FIELD_USER_LIST);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_8__[\"TestUtils\"].click(_utils_test_utils__WEBPACK_IMPORTED_MODULE_8__[\"TestUtils\"].SEARCH_FIELD_USER_LIST);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_8__[\"TestUtils\"].searchAndClickUserList(userEmail);\n_provisioner_calling_wxc_call_license_helper__WEBPACK_IMPORTED_MODULE_2__[\"WxcCallLicenseHelperUtils\"].verifyLicenseEntitlements(selectedLicense);",
+                      "err": {},
+                      "uuid": "a3a3818a-c888-48ae-9ee2-f752cc25babf",
+                      "parentUUID": "150ec089-e7f6-4f7b-9b82-acd6aa935d00",
+                      "isHook": false,
+                      "skipped": true
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [
+                    "a3a3818a-c888-48ae-9ee2-f752cc25babf"
+                  ],
+                  "duration": 0,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "c7c9bd2a-817e-46af-87fc-01c4b5d26064",
+              "title": "Upgrade Licenses",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [],
+              "suites": [
+                {
+                  "uuid": "5a8f18ed-6708-4809-9936-f9d050737ba5",
+                  "title": "update the user to ENTERPRISE",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Should open services panel for user",
+                      "fullTitle": "call-license-upgrade-BCWC_spec Upgrade Licenses update the user to ENTERPRISE Should open services panel for user",
+                      "timedOut": null,
+                      "duration": 0,
+                      "state": "pending",
+                      "speed": null,
+                      "pass": false,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "_provisioner_calling_wxc_call_license_helper__WEBPACK_IMPORTED_MODULE_2__[\"WxcCallLicenseHelperUtils\"].openUserOverviewPanelByEmail(userEmail);",
+                      "err": {},
+                      "uuid": "972efff0-cb9d-4b90-86be-adeb649a3b56",
+                      "parentUUID": "5a8f18ed-6708-4809-9936-f9d050737ba5",
+                      "isHook": false,
+                      "skipped": true
+                    },
+                    {
+                      "title": "Should update to ENTERPRISE license",
+                      "fullTitle": "call-license-upgrade-BCWC_spec Upgrade Licenses update the user to ENTERPRISE Should update to ENTERPRISE license",
+                      "timedOut": null,
+                      "duration": 0,
+                      "state": "pending",
+                      "speed": null,
+                      "pass": false,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "_provisioner_calling_wxc_call_license_helper__WEBPACK_IMPORTED_MODULE_2__[\"WxcCallLicenseHelperUtils\"].updateLicenseEntitlement(selectedLicense);",
+                      "err": {},
+                      "uuid": "f1e6ca46-91e3-4988-b507-8108b785a45b",
+                      "parentUUID": "5a8f18ed-6708-4809-9936-f9d050737ba5",
+                      "isHook": false,
+                      "skipped": true
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [
+                    "972efff0-cb9d-4b90-86be-adeb649a3b56",
+                    "f1e6ca46-91e3-4988-b507-8108b785a45b"
+                  ],
+                  "duration": 0,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                },
+                {
+                  "uuid": "f015cc4e-30db-4a3a-b987-1f1107cc0717",
+                  "title": "User validation flow",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Verify that user has correct entitlements",
+                      "fullTitle": "call-license-upgrade-BCWC_spec Upgrade Licenses User validation flow Verify that user has correct entitlements",
+                      "timedOut": null,
+                      "duration": 0,
+                      "state": "pending",
+                      "speed": null,
+                      "pass": false,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_8__[\"TestUtils\"].waitUntilElemIsPresent(_utils_test_utils__WEBPACK_IMPORTED_MODULE_8__[\"TestUtils\"].SEARCH_FIELD_USER_LIST);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_8__[\"TestUtils\"].click(_utils_test_utils__WEBPACK_IMPORTED_MODULE_8__[\"TestUtils\"].SEARCH_FIELD_USER_LIST);\n_utils_test_utils__WEBPACK_IMPORTED_MODULE_8__[\"TestUtils\"].searchAndClickUserList(userEmail);\n_provisioner_calling_wxc_call_license_helper__WEBPACK_IMPORTED_MODULE_2__[\"WxcCallLicenseHelperUtils\"].verifyLicenseEntitlements(selectedLicense);",
+                      "err": {},
+                      "uuid": "6213b8e4-980a-47e6-aa97-b7ee930fabca",
+                      "parentUUID": "f015cc4e-30db-4a3a-b987-1f1107cc0717",
+                      "isHook": false,
+                      "skipped": true
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [
+                    "6213b8e4-980a-47e6-aa97-b7ee930fabca"
+                  ],
+                  "duration": 0,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                },
+                {
+                  "uuid": "7eb9063e-4ae3-452c-b682-405ce2e30fab",
+                  "title": "Clean Up And Delete Enterprise User",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Should delete the user",
+                      "fullTitle": "call-license-upgrade-BCWC_spec Upgrade Licenses Clean Up And Delete Enterprise User Should delete the user",
+                      "timedOut": null,
+                      "duration": 0,
+                      "state": "pending",
+                      "speed": null,
+                      "pass": false,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "_utils_test_utils__WEBPACK_IMPORTED_MODULE_8__[\"TestUtils\"].deleteIfUserExists(basicUserDetails.USER_EMAIL);",
+                      "err": {},
+                      "uuid": "d2445884-d1f7-4ae4-912d-2fe43bf59a74",
+                      "parentUUID": "7eb9063e-4ae3-452c-b682-405ce2e30fab",
+                      "isHook": false,
+                      "skipped": true
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [
+                    "d2445884-d1f7-4ae4-912d-2fe43bf59a74"
+                  ],
+                  "duration": 0,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]_[status]_report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mochawesome",
+        "reportFilename": "[name]_[status]_report",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
