@@ -1,23 +1,61 @@
-from langchain.document_loaders import TextLoader
-from langchain.schema.messages import HumanMessage
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.embeddings import OllamaEmbeddings
-from langchain_community.vectorstores import Chroma
-from langchain_ollama import ChatOllama
+import json
+from pathlib import Path
 
-# loading logs
-loader = TextLoader("logs/build_output.log")
-docs = loader.load()
+from langchain_community.document_loaders import JSONLoader
 
-splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
-chunks = splitter.split_documents(docs)
+MY_JQ_SCHEMA = """
+{
+  stats: {
+    start: .stats.start,
+    end: .stats.end,
+    passPercent: .stats.passPercent,
+    skipped: .stats.skipped
+  },
+  results: [
+    .results[] | {
+      uuid,
+      title,
+      fullFile,
+      tests: [
+        .tests[] | {
+          title,
+          fullTitle,
+          pass,
+          fail,
+          code,
+          err: {
+            message,
+            estack,
+            diff
+          },
+          skipped
+        }
+      ],
+      suites: [
+        .suites[] | {
+          uuid,
+          title,
+          fullFile,
+          tests,
+          suites
+        }
+      ]
+    }
+  ]
+}
+"""
 
-# create vector store
-embeddings = OllamaEmbeddings(model="nomic-embed-text")
-db = Chroma.from_documents(chunks, embeddings=embeddings, persist_directory="log_db")
-
-llm = ChatOllama(model="gemma3:1b")
-response = llm.invoke(
-    [HumanMessage(content="Explain quantum physics to a 5-year old.")]
+FILE_PATH = "./archives/json/fs-call-waiting_spec_pass_report.json"
+data = json.loads(Path(FILE_PATH).read_text(encoding="utf-8"))
+loader = JSONLoader(
+    file_path=FILE_PATH,
+    jq_schema=MY_JQ_SCHEMA,
+    is_content_key_jq_parsable=True,
+    text_content=False,
 )
-print(response.content)
+# loading phase
+docs_lazy = loader.lazy_load()
+for doc in docs_lazy:
+    print("Metadata: ", doc.metadata)
+    print("#" * 50)
+    print(doc.page_content)

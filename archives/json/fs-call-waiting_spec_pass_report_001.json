@@ -5,10 +5,10 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2025-05-16T18:37:44.706Z",
-    "end": "2025-05-16T18:39:16.757Z",
+    "start": "2025-05-16t18:37:44.706z",
+    "end": "2025-05-16t18:39:16.757z",
     "duration": 92051,
-    "testsRegistered": 5,
+    "testsregistered": 5,
     "passPercent": 60,
     "pendingPercent": 0,
     "other": 1,
@@ -144,13 +144,9 @@
                 "370255c5-70bf-4bda-ae63-587d3ceef4eb",
                 "e2c82ba6-8781-40f7-9bff-210d09b7419e"
               ],
-              "failures": [
-                "aa0f6bd2-56fd-48f1-8b86-cddd312d4b94"
-              ],
+              "failures": ["aa0f6bd2-56fd-48f1-8b86-cddd312d4b94"],
               "pending": [],
-              "skipped": [
-                "13a578de-4b7c-492a-a3f0-1b273a26ac3d"
-              ],
+              "skipped": ["13a578de-4b7c-492a-a3f0-1b273a26ac3d"],
               "duration": 86658,
               "root": false,
               "rootEmpty": false,
@@ -206,3 +202,4 @@
     }
   }
 }
+

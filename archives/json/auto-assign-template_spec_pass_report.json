@@ -525,9 +525,7 @@
                 "bc07fc53-41c7-4da7-a4a4-b9ea3ded324b",
                 "5898107f-9231-4c62-b4a0-001bb2aa80e9"
               ],
-              "failures": [
-                "60278a6e-c5b8-4083-a030-a5e7a1ef47bf"
-              ],
+              "failures": ["60278a6e-c5b8-4083-a030-a5e7a1ef47bf"],
               "pending": [],
               "skipped": [
                 "01133710-faa3-49c2-b4cd-53e2352c6cba",
@@ -647,9 +645,7 @@
               "passes": [],
               "failures": [],
               "pending": [],
-              "skipped": [
-                "989bd8ab-7848-461c-a21c-4223bcd6553a"
-              ],
+              "skipped": ["989bd8ab-7848-461c-a21c-4223bcd6553a"],
               "duration": 0,
               "root": false,
               "rootEmpty": false,
@@ -705,3 +701,4 @@
     }
   }
 }
+

@@ -144,13 +144,9 @@
                 "7afab511-96df-4e8a-8654-1b7f3957a178",
                 "f0b49d50-66b6-4f96-887f-ff0095b666e7"
               ],
-              "failures": [
-                "5254684c-85a1-4722-b430-366438ccd7b9"
-              ],
+              "failures": ["5254684c-85a1-4722-b430-366438ccd7b9"],
               "pending": [],
-              "skipped": [
-                "9ef63fbd-89ff-4800-a508-715df5b4b04e"
-              ],
+              "skipped": ["9ef63fbd-89ff-4800-a508-715df5b4b04e"],
               "duration": 79312,
               "root": false,
               "rootEmpty": false,
@@ -206,3 +202,4 @@
     }
   }
 }
+
